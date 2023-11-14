@@ -10,9 +10,9 @@ import {NFTImmutables} from '../modules/NFTImmutables.sol';
 import {Callbacks} from '../base/Callbacks.sol';
 import {Commands} from '../libraries/Commands.sol';
 import {LockAndMsgSender} from './LockAndMsgSender.sol';
-import {ERC721} from 'solmate/src/tokens/ERC721.sol';
-import {ERC1155} from 'solmate/src/tokens/ERC1155.sol';
-import {ERC20} from 'solmate/src/tokens/ERC20.sol';
+import {ERC721} from '../../solmate/src/tokens/ERC721.sol';
+import {ERC1155} from '../../solmate/src/tokens/ERC1155.sol';
+import {ERC20} from '../../solmate/src/tokens/ERC20.sol';
 import {IAllowanceTransfer} from 'permit2/src/interfaces/IAllowanceTransfer.sol';
 import {ICryptoPunksMarket} from '../interfaces/external/ICryptoPunksMarket.sol';
 
