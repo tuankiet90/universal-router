@@ -9,11 +9,10 @@ async function main() {
   }
   const [owner] = await ethers.getSigners();
 
-  const UniswapRouter = await ethers.getContractFactory("Deploy");
-  const uniswapRouter = await UniswapRouter.deploy();
-  await uniswapRouter.run()
+  const UnsupportedProtocol = await ethers.getContractFactory("UnsupportedProtocol");
+  const unsupportedProtocol = await UnsupportedProtocol.deploy();
 
-  console.log("xxxx",uniswapRouter.address);
+  console.log("xxxx unsupportedProtocol",unsupportedProtocol.address);
   
 
 

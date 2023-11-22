@@ -7,8 +7,8 @@ import {RouterParameters} from 'contracts/base/RouterImmutables.sol';
 contract DeployLocal is DeployUniversalRouter {
     function setUp() public override {
         params = RouterParameters({
-            permit2: 0x000000000022D473030F116dDEE9F6B43aC78BA3,
-            weth9: 0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3,
+            permit2: 0x511f9cF8567D0E77cc6cd7629Ea62EBD40a2E0b9,
+            weth9: 0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd,
             steth: UNSUPPORTED_PROTOCOL,
             wsteth: UNSUPPORTED_PROTOCOL,
             seaportV1_5: UNSUPPORTED_PROTOCOL,
@@ -26,11 +26,11 @@ contract DeployLocal is DeployUniversalRouter {
             looksRareRewardsDistributor: UNSUPPORTED_PROTOCOL,
             looksRareToken: UNSUPPORTED_PROTOCOL,
             v2Factory: UNSUPPORTED_PROTOCOL,
-            v3Factory: 0x4893376342d5D7b3e31d4184c08b265e5aB2A3f6,
+            v3Factory: 0xF587EeE46D44436E0265dD9482da0057b3384528,
             pairInitCodeHash: BYTES32_ZERO,
             poolInitCodeHash: 0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54
         });
 
-        unsupported = 0x5302086A3a25d473aAbBd0356eFf8Dd811a4d89B;
+        unsupported = 0xfE7B76B7778f413aF944FF7573C05cee4C5f6d29;
     }
 }
