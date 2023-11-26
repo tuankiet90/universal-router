@@ -7,7 +7,7 @@ import {RouterParameters} from 'contracts/base/RouterImmutables.sol';
 contract DeployPolygon is DeployUniversalRouter {
     function setUp() public override {
         params = RouterParameters({
-            permit2: 0xAab0f6c1a793430B553c1af66A68e29e22ab23EE,
+            permit2: 0x000000000022D473030F116dDEE9F6B43aC78BA3,
             weth9: 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270,
             seaportV1_5: UNSUPPORTED_PROTOCOL,
             steth: UNSUPPORTED_PROTOCOL,
