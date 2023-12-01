@@ -4,14 +4,14 @@ pragma solidity ^0.8.15;
 import {DeployUniversalRouter} from '../DeployUniversalRouter.s.sol';
 import {RouterParameters} from 'contracts/base/RouterImmutables.sol';
 
-contract DeployPolygon is DeployUniversalRouter {
+contract DeployLocal is DeployUniversalRouter {
     function setUp() public override {
         params = RouterParameters({
-            permit2: 0x000000000022D473030F116dDEE9F6B43aC78BA3,
-            weth9: 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270,
-            seaportV1_5: UNSUPPORTED_PROTOCOL,
+            permit2: 0xda053eB9fD2056E53dc2558Ee0dc87C6756Df70e,
+            weth9: 0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889,
             steth: UNSUPPORTED_PROTOCOL,
             wsteth: UNSUPPORTED_PROTOCOL,
+            seaportV1_5: UNSUPPORTED_PROTOCOL,
             seaportV1_4: UNSUPPORTED_PROTOCOL,
             openseaConduit: UNSUPPORTED_PROTOCOL,
             nftxZap: UNSUPPORTED_PROTOCOL,
@@ -25,12 +25,12 @@ contract DeployPolygon is DeployUniversalRouter {
             routerRewardsDistributor: UNSUPPORTED_PROTOCOL,
             looksRareRewardsDistributor: UNSUPPORTED_PROTOCOL,
             looksRareToken: UNSUPPORTED_PROTOCOL,
-            v2Factory: 0x843bed96dB8b6F9f01e824aC2c8C3eB832b09Ce8,
-            v3Factory: 0x6F210f6079a2ef18c278B4d796B8Fd366b9fe08c,
-            pairInitCodeHash: 0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f,
+            v2Factory: 0xF587EeE46D44436E0265dD9482da0057b3384528,
+            v3Factory: 0x2d5083a170977395F81F32FeC483616FEbDA177b,
+            pairInitCodeHash: BYTES32_ZERO,
             poolInitCodeHash: 0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54
         });
 
-        unsupported = 0x8cEe3440e6F606326a4BF58FCb573b9bFCAb3CD6;
+        unsupported = 0xf1c0098D727142Ce030A129C16Dd97EDA3800e57;
     }
 }
